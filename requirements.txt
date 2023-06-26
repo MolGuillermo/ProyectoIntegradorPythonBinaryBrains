@@ -7,7 +7,7 @@
 #
 #  y para instalar las dependencias de un proyecto, debemos ejecutar el siguiente comando en la terminal:
 #  pip install -r requirements.txt
-# comentario
+
 
 
 asgiref==3.7.2
