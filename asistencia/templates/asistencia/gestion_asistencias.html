@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gestión de Asistencias</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <h1>Gestión de Asistencias</h1>
+    <a href="{% url 'crear_asistencia' %}">Crear Asistencia</a>
+    <table>
+        <thead>
+            <tr>
+                <th>Alumno</th>
+                <th>Fecha</th>
+                <th>Presente</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for asistencia in asistencias %}
+            <tr>
+                <td>{{ asistencia.alumno }}</td>
+                <td>{{ asistencia.fecha }}</td>
+                <td>{{ asistencia.presente }}</td>
+                <td>
+                    <a href="{% url 'modificar_asistencia' asistencia.pk %}">Modificar</a>
+                    <a href="{% url 'eliminar_asistencia' asistencia.pk %}">Eliminar</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

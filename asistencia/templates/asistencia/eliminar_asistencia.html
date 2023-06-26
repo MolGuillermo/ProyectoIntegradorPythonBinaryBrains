@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eliminar Asistencia</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <h1>Eliminar Asistencia</h1>
+    <p>¿Estás seguro de que deseas eliminar la asistencia de {{ asistencia.alumno }} el {{ asistencia.fecha }}?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Eliminar</button>
+    </form>
+</body>
+</html>

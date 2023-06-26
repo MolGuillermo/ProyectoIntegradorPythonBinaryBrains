@@ -1,0 +1,17 @@
+#Para que todos puedan ver las dependencias de nuestro proyecto, debemos crear un archivo llamado requirements.txt.
+#Para crear este archivo, debemos ejecutar el siguiente comando en la terminal:
+# pip freeze > requirements.txt
+#  o
+# pip freeze
+# y pego en un requirements.txt
+#
+#  y para instalar las dependencias de un proyecto, debemos ejecutar el siguiente comando en la terminal:
+#  pip install -r requirements.txt
+# comentario
+
+
+asgiref==3.7.2
+Django==4.2.1
+psycopg2==2.9.6
+sqlparse==0.4.4
+tzdata==2023.3

@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página de Inicio</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <h1>Página de Inicio</h1><br>
+    <h2>Opciones:</h2><br>
+    <div class="index-buttons">
+    <a href="{% url 'gestion_alumnos' %}" class="button">Gestión de Alumnos</a>
+    <a href="{% url 'gestion_asistencias' %}" class="button">Gestión de Asistencias</a>
+    </div>
+</body>
+</html>

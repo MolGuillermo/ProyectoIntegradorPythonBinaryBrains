@@ -1,0 +1,16 @@
+styles.css
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eliminar Alumno</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <h1>Eliminar Alumno</h1>
+    <p>¿Estás seguro de que deseas eliminar a {{ alumno.nombre }} {{ alumno.apellido }}?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Eliminar</button>
+    </form>
+</body>
+</html>
