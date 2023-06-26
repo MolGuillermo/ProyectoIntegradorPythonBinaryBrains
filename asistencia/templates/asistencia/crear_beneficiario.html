@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crear Beneficiario</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'crear_beneficiario.css' %}">
+</head>
+<body>
+    <h1>Crear Beneficiario</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Guardar</button>
+        <p>Este formulario consta de dos campos principales:
+
+            Nombre: Un campo donde los usuarios pueden ingresar su nombre.
+             Aquí se espera que ingresen su nombre de pila o primer nombre.
+             <br>
+    
+            
+            Apellido: Un campo donde los usuarios pueden ingresar su apellido o apellido
+             de familia. Aquí se espera
+             que ingresen su apellido o cualquier otro apellido que les identifique.</p>
+             
+    </form>
+</body>
+</html>

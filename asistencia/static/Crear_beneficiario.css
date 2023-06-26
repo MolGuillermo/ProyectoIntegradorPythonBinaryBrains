@@ -1,0 +1,107 @@
+
+*{
+    background: linear-gradient(239deg, #192e49, #151f69);
+    background-size: 400% 400%;
+ 
+    -webkit-animation: AnimationName 24s ease infinite;
+    -moz-animation: AnimationName 24s ease infinite;
+    animation: AnimationName 24s ease infinite;
+}
+
+.index-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .index-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+   
+    text-align: center;
+    color: #fcfafa;
+    font-size: 350%;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #f7efef;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilos específicos para los formularios */
+  form {
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #f8ffff;
+    background-color: #fcfafa;
+  }
+  
+  form input[type="text"],
+  form input[type="date"],
+  form select {
+    width: 98%;
+    padding: 8px;
+    border: 2px solid #0e0202;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    align-self: start;
+    background-color: #fcfafa;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: #e3ebf1;
+    color: #f0a8a8;
+    border: 0.5px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #78b3e7;
+  }
+
+  p {
+
+    color: #f7efef;
+
+  }

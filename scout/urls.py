@@ -15,15 +15,15 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.urls import path
-from asistencia.views import index, gestion_alumnos,crear_alumno,modificar_alumno,eliminar_alumno,gestion_asistencias,crear_asistencia,modificar_asistencia,eliminar_asistencia
+from asistencia.views import index, gestion_beneficiarios,crear_beneficiario,modificar_beneficiario,eliminar_beneficiario,gestion_asistencias,crear_asistencia,modificar_asistencia,eliminar_asistencia
 
 
 urlpatterns = [
     path('', index, name='index'),
-    path('alumnos/', gestion_alumnos, name='gestion_alumnos'),
-    path('alumnos/crear/', crear_alumno, name='crear_alumno'),
-    path('alumnos/modificar/<int:pk>/', modificar_alumno, name='modificar_alumno'),
-    path('alumnos/eliminar/<int:pk>/', eliminar_alumno, name='eliminar_alumno'),
+    path('beneficiarios/', gestion_beneficiarios, name='gestion_beneficiarios'),
+    path('beneficiarios/crear/', crear_beneficiario, name='crear_beneficiario'),
+    path('beneficiarios/modificar/<int:pk>/', modificar_beneficiario, name='modificar_beneficiario'),
+    path('beneficiario/eliminar/<int:pk>/', eliminar_beneficiario, name='eliminar_beneficiario'),
     path('asistencias/', gestion_asistencias, name='gestion_asistencias'),
     path('asistencias/crear/', crear_asistencia, name='crear_asistencia'),
     path('asistencias/modificar/<int:pk>/', modificar_asistencia, name='modificar_asistencia'),

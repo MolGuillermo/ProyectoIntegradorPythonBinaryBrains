@@ -1,9 +1,10 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Gestión de Asistencias</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'gestion_asistencias.css' %}">
 </head>
 <body>
     <h1>Gestión de Asistencias</h1>
@@ -11,7 +12,7 @@
     <table>
         <thead>
             <tr>
-                <th>Alumno</th>
+                <th>Beneficiario</th>
                 <th>Fecha</th>
                 <th>Presente</th>
                 <th>Acciones</th>
@@ -20,7 +21,7 @@
         <tbody>
             {% for asistencia in asistencias %}
             <tr>
-                <td>{{ asistencia.alumno }}</td>
+                <td>{{ asistencia.Beneficiario }}</td>
                 <td>{{ asistencia.fecha }}</td>
                 <td>{{ asistencia.presente }}</td>
                 <td>

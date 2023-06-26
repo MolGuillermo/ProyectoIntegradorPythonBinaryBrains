@@ -1,0 +1,41 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gestión de Beneficiarios</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'gestion_beneficiarios.css' %}">
+    
+
+</head>
+<body>
+    <h1>Gestión de Beneficiarios</h1>
+    
+    <a href="{% url 'crear_beneficiario' %}">Crear Beneficiario</a>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for beneficiario in Beneficiarios %}
+            <tr>
+                <td>{{ beneficiario.nombre }}</td>
+                <td>{{ beneficiario.apellido }}</td>
+                <td>
+                    <a href="{% url 'modificar_beneficiario' beneficiario.pk %}">Modificar</a>
+                    <a href="{% url 'eliminar_beneficiario' beneficiario.pk %}">Eliminar</a>
+                    
+                </td>
+            </tr>
+            
+             {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,41 +1,41 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Alumno, Asistencia
-from .forms import AlumnoForm, AsistenciaForm
+from .models import Beneficiario, Asistencia
+from .forms import BeneficiarioForm, AsistenciaForm
 
 def index(request):
     return render(request, 'asistencia/index.html')
 
-def gestion_alumnos(request):
-    alumnos = Alumno.objects.all()
-    return render(request, 'asistencia/gestion_alumnos.html', {'alumnos': alumnos})
+def gestion_beneficiarios(request):
+    beneficiarios = Beneficiario.objects.all()
+    return render(request, 'asistencia/gestion_beneficiarios.html', {'beneficiarios': beneficiarios})
 
-def crear_alumno(request):
+def crear_beneficiario(request):
     if request.method == 'POST':
-        form = AlumnoForm(request.POST)
+        form = BeneficiarioForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('gestion_alumnos')
+            return redirect('gestion_beneficiarios')
     else:
-        form = AlumnoForm()
-    return render(request, 'asistencia/crear_alumno.html', {'form': form})
+        form = BeneficiarioForm()
+    return render(request, 'asistencia/crear_beneficiario.html', {'form': form})
 
-def modificar_alumno(request, pk):
-    alumno = get_object_or_404(Alumno, pk=pk)
+def modificar_beneficiario(request, pk):
+    beneficiario = get_object_or_404(Beneficiario, pk=pk)
     if request.method == 'POST':
-        form = AlumnoForm(request.POST, instance=alumno)
+        form = BeneficiarioForm(request.POST, instance=beneficiario)
         if form.is_valid():
             form.save()
-            return redirect('gestion_alumnos')
+            return redirect('gestion_beneficiarios')
     else:
-        form = AlumnoForm(instance=alumno)
-    return render(request, 'asistencia/modificar_alumno.html', {'form': form, 'alumno': alumno})
+        form = BeneficiarioForm(instance=beneficiario)
+    return render(request, 'asistencia/modificar_beneficiario.html', {'form': form, 'beneficiario': beneficiario})
 
-def eliminar_alumno(request, pk):
-    alumno = get_object_or_404(Alumno, pk=pk)
+def eliminar_beneficiario(request, pk):
+    beneficiario = get_object_or_404(Beneficiario, pk=pk)
     if request.method == 'POST':
-        alumno.delete()
-        return redirect('gestion_alumnos')
-    return render(request, 'asistencia/eliminar_alumno.html', {'alumno': alumno})
+        beneficiario.delete()
+        return redirect('gestion_beneficiario')
+    return render(request, 'asistencia/eliminar_beneficiario.html', {'beneficiario': beneficiario})
 
 def gestion_asistencias(request):
     asistencias = Asistencia.objects.all()

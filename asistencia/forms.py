@@ -1,12 +1,12 @@
 from django import forms
-from .models import Alumno, Asistencia
+from .models import Beneficiario, Asistencia
 
-class AlumnoForm(forms.ModelForm):
+class BeneficiarioForm(forms.ModelForm):
     class Meta:
-        model = Alumno
+        model = Beneficiario
         fields = ('nombre', 'apellido')
 
 class AsistenciaForm(forms.ModelForm):
     class Meta:
         model = Asistencia
-        fields = ('alumno', 'fecha', 'presente')
+        fields = ('beneficiario', 'fecha', 'presente')
