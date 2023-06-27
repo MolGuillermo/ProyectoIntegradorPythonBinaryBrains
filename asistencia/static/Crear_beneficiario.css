@@ -1,6 +1,6 @@
 
 *{
-    background: linear-gradient(239deg, #192e49, #151f69);
+    background: linear-gradient(239deg, #dbb0f6, #3c0973);
     background-size: 400% 400%;
  
     -webkit-animation: AnimationName 24s ease infinite;
@@ -28,8 +28,8 @@
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #40046e;
-    box-shadow: 0 2px 5px rgba(250, 247, 247, 0.1);
+    background-color: #d49bff;
+    box-shadow: 0 2px 5px rgba(246, 236, 236, 0.578);
   }
   
   h1 {
@@ -55,7 +55,7 @@
   
   a {
     text-decoration: none;
-    color: #337ab7;
+    color: #fbfdfe;
   }
   
   a:hover {
@@ -90,7 +90,7 @@
   form button {
     padding: 10px 20px;
     background-color: #e3ebf1;
-    color: #f0a8a8;
+    color: #f13b3b;
     border: 0.5px solid #ccc;
     border-radius: 4px;
     cursor: pointer;
