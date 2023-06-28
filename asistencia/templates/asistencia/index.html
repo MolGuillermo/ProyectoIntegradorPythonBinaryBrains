@@ -4,21 +4,67 @@
 <head>
     <title>Asistencia Scout</title>
     <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
-
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
     <div class="container">
     <h1>Grupo Scout</h1><br>
     <div class="formulario">
         <h2>Opciones</h2><br>
-            <a href="{% url 'gestion_beneficiarios' %}" class="button">Gestión de Beneficiarios</a>
-            <a href="{% url 'gestion_asistencias' %}" class="button">Gestión de Asistencias</a>
+
+          <button class="btn btn-success"> Gestión de Beneficiarios</button>
+          <a href="{% url 'gestion_beneficiarios' %}" class="btn btn-info">Gestión de Beneficiarios</a>
+
+          <button class="btn btn-success"> Gestión de Asistencias</button>
+          <a href="{% url 'gestion_asistencias' %}" class="btn btn-success">Gestión de Asistencias</a>
     </div>
 </div>
     <!-- Contenido de tu footer -->
-    {% include 'asistencia/footer.html' %}
+    {% comment %} {% include 'asistencia/footer.html' %} {% endcomment %}
 </body>
 
+
+<footer class="bg-primary text-center text-lg-start text-white">
+    <div class="container p-2"> <!-- Modificar el valor de 'p-2' para reducir el relleno vertical -->
+      <div class="row">
+        <!-- División superior -->
+        <div class="col-lg-12 mb-4">
+          <p class="text-center">Esta aplicación fue realizada por el grupo Binary Brains para el Proyecto Integrador del semestre de la Tecnicatura en Programación de la UTN de San Rafael</p>
+        </div>
+  
+        <!-- División inferior -->
+        <div class="col-lg-4 mb-4">
+          <div class="row">
+            <div class="col-lg-12">
+              <img src="static\img\Binari Brains CIRCULO.png" alt="Imagen del equipo" class="img-fluid" width="150" height="150">
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-8 mb-4">
+          <h5>Integrantes</h5>
+          <div class="row">
+            <div class="col-lg-6">
+              <a href="https://github.com/NataliaLiscio1985">Liscio Natalia</a>
+            </div>
+            <div>
+              <a href="https://github.com/MolGuillermo">Molina Luis Guillermo</a>
+            </div>
+            <div>
+              <a href="https://github.com/TamaraPiccinni">Piccinni Tamara</a>
+            </div>
+            <div>
+              <a href="https://github.com/Carolina-Riddick">Riddick Carolina</a>
+            </div>
+            <div>
+              <a href="https://github.com/mauriciosandrea">Sandrea Mauricio</a>
+            </div>
+            <div>
+              <a href="https://github.com/LuciSere">Serezo Luciana</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</footer> 
 </html>

@@ -6,15 +6,21 @@
 <head>
     <title>Gestión de Beneficiarios</title>
     <link rel="stylesheet" type="text/css" href="{% static 'gestion_beneficiarios.css' %}">
-    
+    <!-- BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
     
     <div class="container">
     <h1>Gestión de Beneficiarios</h1>
-    <a href="{% url 'crear_beneficiario' %}">Crear Beneficiario</a>
+
+    <!-- EN VEZ DE ESTE ENLACE A, IRIA EL BOTON -->
+    <a href="{% url 'crear_beneficiario' %}">Crear Beneficiario </a>
+    <button class="btn btn-success"> Crear Beneficiario </button>
+
     <a href="{% url 'index' %}">Ir a la página principal</a>   
     
+
     
         <tbody>
             {% for beneficiario in Beneficiarios %}
