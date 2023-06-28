@@ -1,14 +1,5 @@
 /* Estilos generales */
 
-<<<<<<< HEAD
-html, body {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: #1e1e24;
-=======
 /* Configuración básica para el cuerpo y la página */
 html{
   /* height: 50%; Hace que el cuerpo ocupe el 100% de la altura */ 
@@ -19,7 +10,6 @@ html{
   background-color: #350866; /* Establece el color de fondo */
   margin: 0; /* Elimina los márgenes */
   padding: 0; /* Elimina el relleno */
->>>>>>> 2d3c25f9145839bbd59239b254a3ddc15b67c87a
 }
 
 /* Configuración adicional para el cuerpo */
@@ -35,13 +25,6 @@ body {
 
 /* Configuración del contenedor principal */
 .container {
-<<<<<<< HEAD
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 50px;
-  background-color: #1e1e24;
-  box-shadow: 0 2px 5px rgba(204, 191, 212, 0.1);
-=======
   width: 100%; /* Hace que el contenedor ocupe el 100% de ancho */
   max-width: 600px; /* Establece el ancho máximo del contenedor */
   padding: 100px; /* Agrega relleno alrededor del contenedor */
@@ -50,7 +33,6 @@ body {
   box-shadow: 0 2px 5px rgba(204, 191, 212, 0.1); /* Agrega una sombra al contenedor */
   border-radius: 10px; /* Agrega esquinas redondeadas al contenedor */
   margin-bottom: 20px; /* Agrega un margen inferior al contenedor */
->>>>>>> 2d3c25f9145839bbd59239b254a3ddc15b67c87a
 }
 
 /* Estilos para títulos */
@@ -207,5 +189,6 @@ footer {
   /* right: 0; */
   /* padding: 10px; */
   /* background-color: #beb6c8; */
-  /* text-align: center; */
-/* } */
+  /* text-align: center; 
+}*/
+

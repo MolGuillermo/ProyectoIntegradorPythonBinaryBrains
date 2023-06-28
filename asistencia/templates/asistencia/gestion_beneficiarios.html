@@ -11,14 +11,7 @@
 </head>
 <body>
     <div class="container">
-<<<<<<< HEAD
-        <h1>Gestión de Beneficiarios</h1>
-        <a href="{% url 'crear_beneficiario' %}">Crear Beneficiario</a>
-        <a href="{% url 'index' %}">Ir a la página principal</a>   
-      
-        <table>
-          <tbody>
-=======
+
     <h1>Gestión de Beneficiarios</h1>
 
     <!-- EN VEZ DE ESTE ENLACE A, IRIA EL BOTON -->
@@ -28,9 +21,8 @@
     <a href="{% url 'index' %}">Ir a la página principal</a>   
     
 
-    
-        <tbody>
->>>>>>> 2d3c25f9145839bbd59239b254a3ddc15b67c87a
+    <table>
+        <tbody> 
             {% for beneficiario in Beneficiarios %}
               <tr>
                 <td>{{ beneficiario.nombre }}</td>
