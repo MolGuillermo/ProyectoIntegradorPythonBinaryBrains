@@ -1,5 +1,6 @@
 /* Estilos generales */
 
+<<<<<<< HEAD
 html, body {
   height: 100%;
   display: flex;
@@ -7,133 +8,204 @@ html, body {
   justify-content: flex-start;
   align-items: center;
   background-color: #1e1e24;
+=======
+/* Configuración básica para el cuerpo y la página */
+html{
+  /* height: 50%; Hace que el cuerpo ocupe el 100% de la altura */ 
+  display: flex; /* Utiliza flexbox para el diseño */
+  flex-direction: column; /* Alinea los elementos en una columna */
+  justify-content: space-between; /* Distribuye el espacio verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+  background-color: #350866; /* Establece el color de fondo */
+  margin: 0; /* Elimina los márgenes */
+  padding: 0; /* Elimina el relleno */
+>>>>>>> 2d3c25f9145839bbd59239b254a3ddc15b67c87a
 }
 
+/* Configuración adicional para el cuerpo */
 body {
-  background: #3f0294; /* Fallback para navegadores que no admiten gradientes */
-  /* background-image: linear-gradient(to right, #e7e7f4, #8008f8); /* Fondo con gradiente */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* display: flex; Utiliza flexbox para el diseño */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
+  flex-grow: 1; /* Hace que el cuerpo crezca para ocupar el espacio disponible */
+  padding: 20px; /* Agrega relleno alrededor del cuerpo */
+  box-sizing: border-box; /* Incluye el relleno y el borde en el tamaño total */
+  background-color: white;
 }
 
+/* Configuración del contenedor principal */
 .container {
+<<<<<<< HEAD
   max-width: 600px;
   margin: 0 auto;
   padding: 50px;
   background-color: #1e1e24;
   box-shadow: 0 2px 5px rgba(204, 191, 212, 0.1);
+=======
+  width: 100%; /* Hace que el contenedor ocupe el 100% de ancho */
+  max-width: 600px; /* Establece el ancho máximo del contenedor */
+  padding: 100px; /* Agrega relleno alrededor del contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  background-color: #350866; /* Establece el color de fondo del contenedor */
+  box-shadow: 0 2px 5px rgba(204, 191, 212, 0.1); /* Agrega una sombra al contenedor */
+  border-radius: 10px; /* Agrega esquinas redondeadas al contenedor */
+  margin-bottom: 20px; /* Agrega un margen inferior al contenedor */
+>>>>>>> 2d3c25f9145839bbd59239b254a3ddc15b67c87a
 }
 
+/* Estilos para títulos */
 h1, h2 {
-  text-align: center;
-  color: #fefefe;
+  text-align: center; /* Centra el texto del título */
+  color: #fefefe; /* Establece el color del texto */
 }
 
+/* Estilos para listas */
 ul {
-  list-style-type: none;
-  padding: 0;
+  list-style-type: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina el relleno de la lista */
 }
 
+/* Estilos para elementos de lista */
 li {
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Agrega un margen inferior a los elementos de la lista */
 }
 
+/* Estilos para enlaces */
 a {
-  text-decoration: none;
-  color: #fcfcfc;
+  text-decoration: none; /* Elimina la decoración de subrayado de los enlaces */
+  color: #fcfcfc; /* Establece el color del texto del enlace */
 }
 
+/* Estilos para enlaces al pasar el mouse por encima */
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Agrega un subrayado al pasar el mouse por encima del enlace */
 }
 
 /* Estilos para formularios */
-
 .formulario {
-  margin-top: 20px;
-  text-align: center;
-  background-color: #3f0294;
+  margin-top: 20px; /* Agrega un margen superior al formulario */
+  text-align: center; /* Centra el texto del formulario */
+  background-color: #350866; /* Establece el color de fondo del formulario */
+  padding: 20px; /* Agrega relleno alrededor del formulario */
+  border-radius: 10px; /* Agrega esquinas redondeadas al formulario */
 }
 
+/* Estilos para enlaces dentro del formulario */
 .formulario a {
-  display: block;
-  margin: 0.5px auto;
-  padding: 10px 20px;
-  background-color: #3f0294;
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
+  display: block; /* Convierte el enlace en un bloque */
+  margin: 10px auto; /* Centra el enlace horizontalmente */
+  padding: 10px 20px; /* Agrega relleno alrededor del enlace */
+  background-color: #350866; /* Establece el color de fondo del enlace */
+  color: #ffffff; /* Establece el color del texto del enlace */
+  border: none; /* Elimina el borde del enlace */
+  border-radius: 5px; /* Agrega esquinas redondeadas al enlace */
+  text-decoration: none; /* Elimina la decoración de subrayado del enlace */
 }
 
+/* Estilos para enlaces dentro del formulario al pasar el mouse por encima */
 .formulario a:hover {
-  background-color: #1e1e24;
+  background-color: #4f0b52; /* Color previo = 663508 - Cambia el color de fondo del enlace al pasar el mouse por encima */
+  width: auto
 }
 
+/* Estilos para formularios */
 form {
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Agrega un margen inferior al formulario */
 }
 
+/* Estilos para etiquetas de formulario */
 form label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #fefbfb;
+  display: block; /* Convierte la etiqueta en un bloque */
+  margin-bottom: 5px; /* Agrega un margen inferior a la etiqueta */
+  font-weight: bold; /* Establece el peso de la fuente en negrita */
+  color: #fefbfb; /* Establece el color del texto de la etiqueta */
 }
 
+/* Estilos para campos de entrada de texto, fecha y selección de formulario */
 form input[type="text"],
 form input[type="date"],
 form select {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-bottom: 10px;
+  width: 100%; /* Hace que los campos de entrada y selección ocupen el 100% de ancho */
+  padding: 8px; /* Agrega relleno dentro de los campos de entrada y selección */
+  border: 1px solid #ccc; /* Agrega un borde alrededor de los campos de entrada y selección */
+  border-radius: 4px; /* Agrega esquinas redondeadas a los campos de entrada y selección */
+  margin-bottom: 10px; /* Agrega un margen inferior a los campos de entrada y selección */
 }
 
+/* Estilos para botones de formulario */
 form button {
-  padding: 10px 20px;
-  background-color: #661ba8;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  padding: 10px 20px; /* Agrega relleno alrededor del botón */
+  background-color: #350866; /* Establece el color de fondo del botón */
+  color: #fff; /* Establece el color del texto del botón */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 4px; /* Agrega esquinas redondeadas al botón */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse sobre el botón */
 }
 
+/* Estilos para botones de formulario al pasar el mouse por encima */
 form button:hover {
-  background-color: #8329d2;
+  background-color: #8329d2; /* Cambia el color de fondo del botón al pasar el mouse por encima */
 }
 
 /* Estilos para botones y enlaces */
-
 .button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #ffffff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-bottom: 10px;
+  display: inline-block; /* Convierte el botón en un elemento en línea */
+  padding: 10px 20px; /* Agrega relleno alrededor del botón */
+  background-color: #ffffff; /* Establece el color de fondo del botón */
+  color: white; /* Establece el color del texto del botón */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Agrega esquinas redondeadas al botón */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse sobre el botón */
+  margin-bottom: 10px; /* Agrega un margen inferior al botón */
 }
 
+/* Estilos para botones y enlaces al pasar el mouse por encima */
 .button:hover {
-  background-color: #ffffff;
+  background-color: #ffffff; /* Cambia el color de fondo del botón al pasar el mouse por encima */
 }
 
+/* Estilos para los botones de la página principal */
 .index-buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 50px;
+  display: flex; /* Utiliza flexbox para el diseño */
+  flex-direction: row; /* Alinea los botones en una fila */
+  align-items: center; /* Centra los botones horizontalmente */
+  justify-content: center; /* Centra los botones verticalmente */
+  margin-top: 50px; /* Agrega un margen superior a los botones */
+  width: 100%; /* Hace que los botones ocupen el 100% de ancho */
 }
 
+/* Estilos para los enlaces de la página principal */
 .index-buttons a {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 24px;
-  margin-bottom: 10px;
+  display: inline-block; /* Convierte el enlace en un elemento en línea */
+  padding: 10px 20px; /* Agrega relleno alrededor del enlace */
+  font-size: 24px; /* Establece el tamaño de fuente del enlace */
+  margin: 0 10px; /* Agrega un margen a los lados del enlace */
 }
+
+/* FOOTER */
+/* Estilos específicos para el footer */
+footer {
+    box-sizing: border-box;
+    margin: auto;
+    padding: auto;
+    width: auto; /* Hace que el footer ocupe el 100% de ancho */
+
+  /* background-color: #350866; Establece el color de fondo del footer */
+  color: #ffffff; /*  Establece el color del texto del footer*/
+  /* padding: 10px; Agrega relleno alrededor del footer */
+  text-align: center; /* Centra el texto del footer*/
+
+  /* position: fixed; Establece la posición fija del footer */
+  /* bottom: 0; Fija el footer en la parte inferior */
+  /* left: 0; Fija el footer a la izquierda */
+  border-radius: 10px; /* Agrega esquinas redondeadas al footer*/
+}
+
+/* .footer { */
+  /* margin-bottom: 50px; */
+  /* left: 0; */
+  /* right: 0; */
+  /* padding: 10px; */
+  /* background-color: #beb6c8; */
+  /* text-align: center; */
+/* } */

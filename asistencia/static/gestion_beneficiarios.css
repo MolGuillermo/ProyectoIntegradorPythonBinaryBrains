@@ -1,16 +1,33 @@
-html, body {
+* {
+  background: linear-gradient(239deg, #6705fb, #2f0165);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 24s ease infinite;
+  -moz-animation: AnimationName 24s ease infinite;
+  animation: AnimationName 24s ease infinite;
+}
+
+/* html, body {
     background-color: rgb(17, 10, 78);
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-}
+} */
+
+/*h1{
+    text-align: center;
+    text-size: 100%;
+    color: rgb(243, 243, 243);
+}*/
+
 h1 {
   color: white;
     text-align: center;
   }
   
-  a {
+  /* A NO SON BOTONES */
+  /* a {
     display: block;
     width: fit-content;
     margin: 10px auto;
@@ -20,7 +37,7 @@ h1 {
     border: none;
     border-radius: 5px;
     text-decoration: none;
-  }
+  } */
   
   a:hover {
     background-color: #45a049;
@@ -41,21 +58,6 @@ h1 {
     background-color: #f2f2f2;
   }
 
-/*h1{
-    text-align: center;
-    text-size: 100%;
-    color: rgb(243, 243, 243);
-}
-
-
-* {
-    background: linear-gradient(239deg, #6705fb, #2f0165);
-    background-size: 400% 400%;
-
-    -webkit-animation: AnimationName 24s ease infinite;
-    -moz-animation: AnimationName 24s ease infinite;
-    animation: AnimationName 24s ease infinite;
-}
 
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 41%}
@@ -71,4 +73,4 @@ h1 {
     0%{background-position:0% 41%}
     50%{background-position:100% 60%}
     100%{background-position:0% 41%}
-}*/
+}
