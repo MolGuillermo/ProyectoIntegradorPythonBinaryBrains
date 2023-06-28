@@ -9,29 +9,25 @@
     
 </head>
 <body>
-    
     <div class="container">
-    <h1>Gestión de Beneficiarios</h1>
-    <a href="{% url 'crear_beneficiario' %}">Crear Beneficiario</a>
-    <a href="{% url 'index' %}">Ir a la página principal</a>   
-    
-    
-        <tbody>
+        <h1>Gestión de Beneficiarios</h1>
+        <a href="{% url 'crear_beneficiario' %}">Crear Beneficiario</a>
+        <a href="{% url 'index' %}">Ir a la página principal</a>   
+      
+        <table>
+          <tbody>
             {% for beneficiario in Beneficiarios %}
-            <tr>
+              <tr>
                 <td>{{ beneficiario.nombre }}</td>
                 <td>{{ beneficiario.apellido }}</td>
                 <td>
-                    <a href="{% url 'modificar_beneficiario' beneficiario.pk %}">Modificar</a>
-                    <a href="{% url 'eliminar_beneficiario' beneficiario.pk %}">Eliminar</a>
-                    
+                  <a href="{% url 'modificar_beneficiario' beneficiario.pk %}">Modificar</a>
+                  <a href="{% url 'eliminar_beneficiario' beneficiario.pk %}">Eliminar</a>    
                 </td>
-            </tr>
-            
-            
-             {% endfor %}
-        </tbody>
-    </table>   
-</div>
+              </tr>              
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
 </body>
 </html>

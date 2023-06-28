@@ -6,7 +6,7 @@ html, body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: #0c0b0e;
+  background-color: #1e1e24;
 }
 
 body {
@@ -20,8 +20,8 @@ body {
 .container {
   max-width: 600px;
   margin: 0 auto;
-  padding: 20px;
-  background-color: #fefefe;
+  padding: 50px;
+  background-color: #1e1e24;
   box-shadow: 0 2px 5px rgba(204, 191, 212, 0.1);
 }
 

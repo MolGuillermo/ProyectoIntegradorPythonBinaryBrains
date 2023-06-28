@@ -13,7 +13,7 @@ def gestion_beneficiarios(request):
     # Obtener todos los beneficiarios de la base de datos
     beneficiarios = Beneficiario.objects.all()
     # Renderizar la plantilla 'gestion_beneficiarios.html' y pasar los beneficiarios como contexto
-    return render(request, 'asistencia/gestion_beneficiarios.html', {'beneficiarios': beneficiarios})
+    return render(request, 'asistencia/gestion_beneficiarios.html', {'Beneficiarios': beneficiarios})
 
 # Vista para crear un nuevo beneficiario
 def crear_beneficiario(request):

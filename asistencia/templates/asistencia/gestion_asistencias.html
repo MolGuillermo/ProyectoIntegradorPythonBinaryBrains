@@ -21,14 +21,14 @@
             </tr>
         </thead>
         <tbody>
-            {% for asistencia in Asistencias %}
+            {% for asistencia_item in asistencias %}
             <tr>
-                <td>{{ asistencia.Beneficiario }}</td>
-                <td>{{ asistencia.fecha }}</td>
-                <td>{{ asistencia.presente }}</td>
+                <td>{{ asistencia_item.beneficiario }}</td>
+                <td>{{ asistencia_item.fecha }}</td>
+                <td>{{ asistencia_item.presente }}</td>
                 <td>
-                    <a href="{% url 'modificar_asistencia' asistencia.pk %}">Modificar</a>
-                    <a href="{% url 'eliminar_asistencia' asistencia.pk %}">Eliminar</a>
+                    <a href="{% url 'modificar_asistencia' asistencia_item.pk %}">Modificar</a>
+                    <a href="{% url 'eliminar_asistencia' asistencia_item.pk %}">Eliminar</a>
                 </td>
             </tr>
             {% endfor %}

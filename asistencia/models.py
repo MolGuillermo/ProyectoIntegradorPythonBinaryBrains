@@ -16,6 +16,8 @@ class Beneficiario(models.Model):
 
     def __str__(self):
         return f"{self.nombre} {self.apellido}"
+    
+    
 
 class Asistencia(models.Model):
     beneficiario = models.ForeignKey(Beneficiario, on_delete=models.CASCADE)
@@ -24,3 +26,5 @@ class Asistencia(models.Model):
 
     def __str__(self):
         return f"Asistencia de {self.beneficiario} el {self.fecha}"
+    
+    
