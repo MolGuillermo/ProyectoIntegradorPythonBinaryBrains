@@ -4,16 +4,21 @@
 <head>
     <title>Asistencia Scout</title>
     <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+
 
 </head>
-
-<h1>Página de Inicio</h1><br>
 <body>
-    
-    <h2>Opciones:</h2><br>
-    <div class="index-buttons">
-    <a href="{% url 'gestion_beneficiarios' %}" class="button">Gestión de Beneficiarios</a>
-    <a href="{% url 'gestion_asistencias' %}" class="button">Gestión de Asistencias</a>
+    <div class="container">
+    <h1>Grupo Scout</h1><br>
+    <div class="formulario">
+        <h2>Opciones</h2><br>
+            <a href="{% url 'gestion_beneficiarios' %}" class="button">Gestión de Beneficiarios</a>
+            <a href="{% url 'gestion_asistencias' %}" class="button">Gestión de Asistencias</a>
     </div>
+</div>
+    <!-- Contenido de tu footer -->
+    {% include 'asistencia/footer.html' %}
 </body>
+
 </html>
