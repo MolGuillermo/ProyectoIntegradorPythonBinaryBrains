@@ -1,4 +1,47 @@
-h1{
+html, body {
+    background-color: rgb(17, 10, 78);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+h1 {
+  color: white;
+    text-align: center;
+  }
+  
+  a {
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    background-color: #45a049;
+  }
+  
+  table {
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+
+/*h1{
     text-align: center;
     text-size: 100%;
     color: rgb(243, 243, 243);
@@ -6,7 +49,7 @@ h1{
 
 
 * {
-    background: linear-gradient(239deg, #c38bfb, #6a0297);
+    background: linear-gradient(239deg, #6705fb, #2f0165);
     background-size: 400% 400%;
 
     -webkit-animation: AnimationName 24s ease infinite;
@@ -28,4 +71,4 @@ h1{
     0%{background-position:0% 41%}
     50%{background-position:100% 60%}
     100%{background-position:0% 41%}
-}
+}*/

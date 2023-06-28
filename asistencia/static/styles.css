@@ -1,46 +1,33 @@
 /* Estilos generales */
 
-/* styles.css */
-
-
-body {
-  background-color: #ffffff; /* Fallback para navegadores que no admiten gradientes */
-  background-image: linear-gradient(to right, #05050a, #080913); /* Fondo con gradiente */
-}
-
-.index-buttons {
+html, body {
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 50px;
+  background-color: #0c0b0e;
 }
 
-.index-buttons a {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 24px;
-  margin-bottom: 10px;
+body {
+  background: #3f0294; /* Fallback para navegadores que no admiten gradientes */
+  /* background-image: linear-gradient(to right, #e7e7f4, #8008f8); /* Fondo con gradiente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(76, 4, 124, 0.1);
+  background-color: #fefefe;
+  box-shadow: 0 2px 5px rgba(204, 191, 212, 0.1);
 }
 
-h1 {
- 
+h1, h2 {
   text-align: center;
   color: #fefefe;
-}
-
-h2 {
-  text-align: center;
-  color: #f7efef;
 }
 
 ul {
@@ -61,7 +48,29 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Estilos específicos para los formularios */
+/* Estilos para formularios */
+
+.formulario {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #3f0294;
+}
+
+.formulario a {
+  display: block;
+  margin: 0.5px auto;
+  padding: 10px 20px;
+  background-color: #3f0294;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.formulario a:hover {
+  background-color: #1e1e24;
+}
+
 form {
   margin-bottom: 20px;
 }
@@ -94,4 +103,37 @@ form button {
 
 form button:hover {
   background-color: #8329d2;
+}
+
+/* Estilos para botones y enlaces */
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.button:hover {
+  background-color: #ffffff;
+}
+
+.index-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.index-buttons a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }

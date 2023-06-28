@@ -21,6 +21,14 @@ class BeneficiarioForm(forms.ModelForm):
         if not dni:
             raise forms.ValidationError("El campo DNI es obligatorio.")
         return dni
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['nombre'].widget.attrs['class'] = 'centered-form'
+        self.fields['apellido'].widget.attrs['class'] = 'centered-form'
+        self.fields['dni'].widget.attrs['class'] = 'centered-form'
+        self.fields['fecha_de_nacimiento'].widget.attrs['class'] = 'centered-form'
+        self.fields['edad'].widget.attrs['class'] = 'centered-form'
+        self.fields['rama'].widget.attrs['class'] = 'centered-form'
 
 class AsistenciaForm(forms.ModelForm):
     fecha = forms.DateField(widget=forms.DateInput(attrs={'type': 'date'}))

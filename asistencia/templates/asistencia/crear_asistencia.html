@@ -2,15 +2,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
     <title>Crear Asistencia</title>
     <link rel="stylesheet" type="text/css" href="{% static 'crear_asistencia.css' %}">
 </head>
 <body>
-    <h1>Crear Asistencia</h1>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Guardar</button>
-    </form>
+    <div class="container">
+        <div class="content">
+            <h1>Crear Asistencia</h1>            
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Guardar</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

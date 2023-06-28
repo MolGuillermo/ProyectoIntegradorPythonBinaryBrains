@@ -1,4 +1,24 @@
-* {
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* {
     background: linear-gradient(239deg, #aa4af9, #520271);
     background-size: 400% 400%;
 
@@ -25,4 +45,4 @@
 
 h1{
     color: white;
-}
+}*/

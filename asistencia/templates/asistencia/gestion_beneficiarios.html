@@ -9,18 +9,13 @@
     
 </head>
 <body>
+    
+    <div class="container">
     <h1>Gestión de Beneficiarios</h1>
-    
     <a href="{% url 'crear_beneficiario' %}">Crear Beneficiario</a>
+    <a href="{% url 'index' %}">Ir a la página principal</a>   
     
-    <table>
-        <thead>
-            <tr>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
+    
         <tbody>
             {% for beneficiario in Beneficiarios %}
             <tr>
@@ -33,8 +28,10 @@
                 </td>
             </tr>
             
+            
              {% endfor %}
         </tbody>
-    </table>
+    </table>   
+</div>
 </body>
 </html>

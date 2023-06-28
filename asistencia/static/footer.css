@@ -1,0 +1,33 @@
+.footer {
+    
+    margin-bottom: 50px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #350866;
+    text-align: center;
+}
+
+.name {
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+.footer {
+    
+    margin-bottom: 50px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #350866;
+    text-align: center;
+}
+
+.name {
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+*{
+    background-color: rgb(42, 11, 92);
+      
+}

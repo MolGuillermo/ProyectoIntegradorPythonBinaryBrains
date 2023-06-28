@@ -1,13 +1,16 @@
-
 *{
-    background: linear-gradient(239deg, #dbb0f6, #3c0973);
+    background: linear-gradient(239deg, #6e1cf2, #3c027a);
     background-size: 400% 400%;
  
     -webkit-animation: AnimationName 24s ease infinite;
     -moz-animation: AnimationName 24s ease infinite;
     animation: AnimationName 24s ease infinite;
 }
-
+ .centered-form {
+    margin: 0 auto;
+    width: 50%;
+}
+  
 .index-buttons {
     display: flex;
     flex-direction: column;
@@ -28,8 +31,8 @@
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #d49bff;
-    box-shadow: 0 2px 5px rgba(246, 236, 236, 0.578);
+    background-color: #f8f5fa;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.219);
   }
   
   h1 {
@@ -63,6 +66,7 @@
   }
   
   /* Estilos específicos para los formularios */
+  
   form {
     margin-bottom: 20px;
   }
@@ -72,7 +76,7 @@
     margin-bottom: 5px;
     font-weight: bold;
     color: #f8ffff;
-    background-color: #fcfafa;
+    background: #3d0277;
   }
   
   form input[type="text"],
@@ -80,17 +84,17 @@
   form select {
     width: 98%;
     padding: 8px;
-    border: 2px solid #0e0202;
+    border: 2px solid #f6f5f5;
     border-radius: 4px;
     margin-bottom: 10px;
     align-self: start;
-    background-color: #fcfafa;
+    background: #b0dfe8;
   }
   
   form button {
     padding: 10px 20px;
     background-color: #e3ebf1;
-    color: #f13b3b;
+    color: #1ff403;
     border: 0.5px solid #ccc;
     border-radius: 4px;
     cursor: pointer;
@@ -105,3 +109,5 @@
     color: #f7efef;
 
   }
+
+ 
