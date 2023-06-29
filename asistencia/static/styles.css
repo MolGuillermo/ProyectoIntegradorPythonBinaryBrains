@@ -7,7 +7,14 @@ html{
   flex-direction: column; /* Alinea los elementos en una columna */
   justify-content: space-between; /* Distribuye el espacio verticalmente */
   align-items: center; /* Centra los elementos horizontalmente */
-  background-color: #350866; /* Establece el color de fondo */
+  /* background-color: #350866; Establece el color de fondo */
+  background-image: url('img/bosque.jpg');
+  background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed; /* Fija la imagen para que no se mueva al hacer scroll */
+  background-position: center; /* Centra la imagen en el contenedor */
+  width: 100%; /* Hace que el cuerpo ocupe el 100% del ancho */
+  height: 100%; /* Hace que el cuerpo ocupe el 100% de la altura */
   margin: 0; /* Elimina los márgenes */
   padding: 0; /* Elimina el relleno */
 }
@@ -19,8 +26,9 @@ body {
   justify-content: center; /* Centra los elementos verticalmente */
   flex-grow: 1; /* Hace que el cuerpo crezca para ocupar el espacio disponible */
   padding: 20px; /* Agrega relleno alrededor del cuerpo */
-  box-sizing: border-box; /* Incluye el relleno y el borde en el tamaño total */
-  background-color: white;/* Color del fondo: Blanco*/
+  /* box-sizing: border-box; Incluye el relleno y el borde en el tamaño total */
+  /* background-color: white;Color del fondo: Blanco */
+  /* opacity: 0.3; Opacidad del fondo */
 }
 
 /* Configuración del contenedor principal */
@@ -86,17 +94,13 @@ a:hover {
   text-decoration: none; /* Elimina la decoración de subrayado del enlace */
 }
 
-
 .table td {
   background-color: #350866; /* Establece el color de fondo del enlace */
-  color: #ffffff; /* Establece el color del texto del enlace */
+  color: #000000; /* Establece el color del texto del enlace */
   border: none; /* Elimina el borde del enlace */
   border-radius: 5px; /* Agrega esquinas redondeadas al enlace */
   text-decoration: none; /* Elimina la decoración de subrayado del enlace */
   
-}
-th{
-  color: #fcfcfc; /*cambiar los titulos color titulos en la tabla*/
 }
 
 /* Estilos para enlaces dentro del formulario al pasar el mouse por encima */
@@ -174,7 +178,7 @@ form button:hover {
 /* Estilos para los enlaces de la página principal */
 .index-buttons a {
   display: inline-block; /* Convierte el enlace en un elemento en línea */
-  padding: 10px 20px; /* Agrega relleno alrededor del enlace */
+  padding: 10px 20px; /* Agrega relleno alrededor del enlace  */
   font-size: 24px; /* Establece el tamaño de fuente del enlace */
   margin: 0 10px; /* Agrega un margen a los lados del enlace */
 }
@@ -185,10 +189,10 @@ form button:hover {
   margin-right: auto;
 }
 th{
-  color: #fcfcfc; /*cambiar los titulos color titulos en la tabla*/
+  color: #000000; /*cambiar los titulos color titulos en la tabla*/
 }
 td{
-  color: #fefefe;
+  color: #000000;
   text-align: center;
   vertical-align: middle;
 }
@@ -207,14 +211,16 @@ tr{
 /* Estilos específicos para el footer */
 footer {
     box-sizing: border-box;
-    margin: auto;
-    padding: auto;
-    width: auto; /* Hace que el footer ocupe el 100% de ancho */
+    /* margin: auto; */
+    /* padding: auto; */
+    width: auto; /* Hace que el footer ocupe el 100% de ancho */    
+    height: auto; /* Establece la altura del footer */
+    
 
   /* background-color: #350866; Establece el color de fondo del footer */
-  color: #ffffff; /*  Establece el color del texto del footer*/
+ /* color: #ffffff; /*  Establece el color del texto del footer*/
   /* padding: 10px; Agrega relleno alrededor del footer */
-  text-align: center; /* Centra el texto del footer*/
+   text-align: center; /* Centra el texto del footer*/
 
   /* position: fixed; Establece la posición fija del footer */
   /* bottom: 0; Fija el footer en la parte inferior */

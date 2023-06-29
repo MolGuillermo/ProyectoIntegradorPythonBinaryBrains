@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
     <title>Crear Asistencia</title>
     <link rel="stylesheet" type="text/css" href="{% static 'crear_asistencia.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
@@ -14,7 +13,7 @@
             <form method="post">
                 {% csrf_token %}
                 {{ form.as_p }}
-                <button type="submit">Guardar</button>
+                <button type="submit" class="btn btn-success">Guardar</button>
             </form>
         </div>
     </div>

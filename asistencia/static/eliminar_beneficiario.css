@@ -7,6 +7,15 @@
     animation: AnimationName 24s ease infinite;
 }
 
+h1 {
+    text-align: center;
+    color: #f8f8f8;
+}
+
+p{
+    color: #f8f8f8;
+}
+
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 41%}
     50%{background-position:100% 60%}
@@ -21,14 +30,4 @@
     0%{background-position:0% 41%}
     50%{background-position:100% 60%}
     100%{background-position:0% 41%}
-}
-
-
-h1 {
-    text-align: center;
-    color: #f8f8f8;
-}
-
-p{
-    color: #f8f8f8;
 }
