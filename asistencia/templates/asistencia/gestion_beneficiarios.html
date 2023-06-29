@@ -20,8 +20,6 @@
       <button class="btn btn-success"> Crear Beneficiario </button>
 
       <a href="{% url 'index' %}">Ir a la página principal</a>   
-      
-
       <table class="table table-striped">
         <thead>
           <tr>
@@ -29,7 +27,7 @@
               <th scope="col">Apellido</th>
               <th scope="col">Acciones</th>
           </tr>
-        </thead
+        </thead>
         <tbody> 
           {% for beneficiario in Beneficiarios %}
             <tr>
