@@ -21,15 +21,18 @@ html{
 
 /* Configuración adicional para el cuerpo */
 body {
+  
   /* display: flex; Utiliza flexbox para el diseño */
   align-items: center; /* Centra los elementos horizontalmente */
   justify-content: center; /* Centra los elementos verticalmente */
   flex-grow: 1; /* Hace que el cuerpo crezca para ocupar el espacio disponible */
-  padding: 20px; /* Agrega relleno alrededor del cuerpo */
+  padding: 10px; /* Agrega relleno alrededor del cuerpo */
   /* box-sizing: border-box; Incluye el relleno y el borde en el tamaño total */
   /* background-color: white;Color del fondo: Blanco */
-  /* opacity: 0.3; Opacidad del fondo */
+  /* opacity: 0.3; /* Opacidad del fondo */
+  background-color: rgba(255, 255, 255, 0.3); /* Fondo opaco */
 }
+
 
 /* Configuración del contenedor principal */
 .container {
@@ -220,6 +223,7 @@ footer {
   /* background-color: #350866; Establece el color de fondo del footer */
  /* color: #ffffff; /*  Establece el color del texto del footer*/
   /* padding: 10px; Agrega relleno alrededor del footer */
+   background-color: rgba(255, 255, 255, 0.7); /* Fondo opaco */
    text-align: center; /* Centra el texto del footer*/
 
   /* position: fixed; Establece la posición fija del footer */
