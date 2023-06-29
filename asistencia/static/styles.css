@@ -20,7 +20,7 @@ body {
   flex-grow: 1; /* Hace que el cuerpo crezca para ocupar el espacio disponible */
   padding: 20px; /* Agrega relleno alrededor del cuerpo */
   box-sizing: border-box; /* Incluye el relleno y el borde en el tamaño total */
-  background-color: white;
+  background-color: white;/* Color del fondo: Blanco*/
 }
 
 /* Configuración del contenedor principal */
@@ -30,9 +30,10 @@ body {
   padding: 100px; /* Agrega relleno alrededor del contenedor */
   margin: 0 auto; /* Centra el contenedor horizontalmente */
   background-color: #350866; /* Establece el color de fondo del contenedor */
-  box-shadow: 0 2px 5px rgba(204, 191, 212, 0.1); /* Agrega una sombra al contenedor */
+  box-shadow: 0 2px 5px rgba(227, 218, 232, 0.1); /* Agrega una sombra al contenedor */
   border-radius: 10px; /* Agrega esquinas redondeadas al contenedor */
   margin-bottom: 20px; /* Agrega un margen inferior al contenedor */
+  color: #86d6f6; /* Establece el color del texto titulos h1,h2*/
 }
 
 /* Estilos para títulos */
@@ -70,6 +71,7 @@ a:hover {
   background-color: #350866; /* Establece el color de fondo del formulario */
   padding: 20px; /* Agrega relleno alrededor del formulario */
   border-radius: 10px; /* Agrega esquinas redondeadas al formulario */
+  color: #86d6f6; /* Establece el color del texto del titulo h1*/
 }
 
 /* Estilos para enlaces dentro del formulario */
@@ -164,6 +166,27 @@ form button:hover {
   margin: 0 10px; /* Agrega un margen a los lados del enlace */
 }
 
+/*estilos listas*/
+.table{
+  margin-left: auto;
+  margin-right: auto;
+}
+td{
+  color: #fefefe;
+  text-align: center;
+  vertical-align: middle;
+}
+tr{
+  justify-items: center;
+}
+
+/*estilos avisos*/
+.aviso{
+  font-size: x-large;
+}
+
+
+
 /* FOOTER */
 /* Estilos específicos para el footer */
 footer {
@@ -183,12 +206,16 @@ footer {
   border-radius: 10px; /* Agrega esquinas redondeadas al footer*/
 }
 
-/* .footer { */
-  /* margin-bottom: 50px; */
-  /* left: 0; */
-  /* right: 0; */
-  /* padding: 10px; */
-  /* background-color: #beb6c8; */
-  /* text-align: center; 
-}*/
+
+
+
+/* Estilos específicos para el footer */
+/* .footer {
+  margin-bottom: 50px; /* Agrega un margen inferior de 50px al footer */
+  /* left: 0; /* Alinea el footer a la izquierda */
+  /* right: 0; /* Alinea el footer a la derecha */
+  /* padding: 10px; /* Agrega relleno alrededor del footer */
+  /* background-color: #350866; /* Establece el color de fondo del footer */
+  /* text-align: center;} /* Centra el texto del footer */ 
+
 

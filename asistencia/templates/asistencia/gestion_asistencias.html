@@ -4,20 +4,22 @@
 <html>
 <head>
     <title>Gestión de Asistencias</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'gestion_asistencias.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
+    <div class="formulario">
     <h1>Gestión de Asistencias</h1>
     
     <a href="{% url 'index' %}">Ir a la página principal</a>
     <a href="{% url 'crear_asistencia' %}">Crear Asistencia</a>
-    <table>
+    <table class="table table-striped">
         <thead>
             <tr>
-                <th>Beneficiario</th>
-                <th>Fecha</th>
-                <th>Presente</th>
-                <th>Acciones</th>
+                <th scope="col">Beneficiario</th>
+                <th scope="col">Fecha</th>
+                <th scope="col">Presente</th>
+                <th scope="col">Acciones</th>
             </tr>
         </thead>
         <tbody>
@@ -34,5 +36,6 @@
             {% endfor %}
         </tbody>
     </table>
+</div>
 </body>
 </html>
