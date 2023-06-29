@@ -2,13 +2,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Crear Asistencia</title>
+    <title>Crear Asistencia</title>    
     <link rel="stylesheet" type="text/css" href="{% static 'crear_asistencia.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+    
+    
+    
 </head>
 <body>
+    <a href="{% url 'index' %}" class="btn btn-info">Ir a la página principal</a>
     <div class="container">
-        <div class="content">
+        <div class="conten">
             <h1>Crear Asistencia</h1>            
             <form method="post">
                 {% csrf_token %}

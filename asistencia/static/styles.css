@@ -21,7 +21,7 @@ html{
 
 /* Configuración adicional para el cuerpo */
 body {
-  
+  height: 100vh;  
   /* display: flex; Utiliza flexbox para el diseño */
   align-items: center; /* Centra los elementos horizontalmente */
   justify-content: center; /* Centra los elementos verticalmente */
@@ -38,7 +38,7 @@ body {
 .container {
   width: 100%; /* Hace que el contenedor ocupe el 100% de ancho */
   max-width: 600px; /* Establece el ancho máximo del contenedor */
-  padding: 100px; /* Agrega relleno alrededor del contenedor */
+  padding: 20px; /* Agrega relleno alrededor del contenedor */
   margin: 0 auto; /* Centra el contenedor horizontalmente */
   background-color: #350866; /* Establece el color de fondo del contenedor */
   box-shadow: 0 2px 5px rgba(227, 218, 232, 0.1); /* Agrega una sombra al contenedor */
@@ -80,9 +80,9 @@ a:hover {
   margin-top: 20px; /* Agrega un margen superior al formulario */
   text-align: center; /* Centra el texto del formulario */
   background-color: #350866; /* Establece el color de fondo del formulario */
-  padding: 20px; /* Agrega relleno alrededor del formulario */
+  padding: 10px; /* Agrega relleno alrededor del formulario */
   border-radius: 10px; /* Agrega esquinas redondeadas al formulario */
-  color: #86d6f6; /* Establece el color del texto del titulo h1*/
+  color: #e2c9fa; /* Establece el color del texto del titulo h1*/
 }
 
 /* Estilos para enlaces dentro del formulario */
@@ -108,8 +108,9 @@ a:hover {
 
 /* Estilos para enlaces dentro del formulario al pasar el mouse por encima */
 .formulario a:hover {
-  background-color: #1c0058; /* Color previo = 663508 - Cambia el color de fondo del enlace al pasar el mouse por encima */
-  width: auto
+  background-color: #702dff; /* Color previo = 663508 - Cambia el color de fondo del enlace al pasar el mouse por encima */
+  /*width: 50px; /* Hace que el enlace ocupe el % de ancho */
+  display: inline-block; /* Convierte el enlace en un bloque en línea */
 }
 
 /* Estilos para formularios */
@@ -138,6 +139,7 @@ form select {
 
 /* Estilos para botones de formulario */
 form button {
+
   padding: 10px 20px; /* Agrega relleno alrededor del botón */
   background-color: #350866; /* Establece el color de fondo del botón */
   color: #fff; /* Establece el color del texto del botón */
@@ -195,7 +197,7 @@ th{
   color: #000000; /*cambiar los titulos color titulos en la tabla*/
 }
 td{
-  color: #000000;
+  color: #ffffff; /*cambiar los titulos color titulos en la tabla*/
   text-align: center;
   vertical-align: middle;
 }
@@ -223,7 +225,7 @@ footer {
   /* background-color: #350866; Establece el color de fondo del footer */
  /* color: #ffffff; /*  Establece el color del texto del footer*/
   /* padding: 10px; Agrega relleno alrededor del footer */
-   background-color: rgba(255, 255, 255, 0.7); /* Fondo opaco */
+   background-color: rgba(255, 255, 255, 0.5); /* Fondo opaco */
    text-align: center; /* Centra el texto del footer*/
 
   /* position: fixed; Establece la posición fija del footer */

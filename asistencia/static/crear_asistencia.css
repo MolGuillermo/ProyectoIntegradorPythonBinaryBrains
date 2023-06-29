@@ -1,11 +1,21 @@
 html, body {
-    height: 100%;
-    margin: 0;
-}
-
+    display: flex; /* Utiliza flexbox para el diseño */
+    flex-direction: column; /* Alinea los elementos en una columna */
+    justify-content: space-between; /* Distribuye el espacio verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    background-image: url('img/bosque.jpg');
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen para que no se mueva al hacer scroll */
+    background-position: center; /* Centra la imagen en el contenedor */
+    width: 100%; /* Hace que el cuerpo ocupe el 100% del ancho */
+    height: 100%; /* Hace que el cuerpo ocupe el 100% de la altura */
+    margin: 0; /* Elimina los márgenes */
+    padding: 0; /* Elimina el relleno */
+  }
 .container {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     height: 100%;
 }
@@ -14,5 +24,5 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
