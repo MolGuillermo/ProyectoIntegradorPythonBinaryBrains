@@ -61,7 +61,7 @@ a {
 
 /* Estilos para enlaces al pasar el mouse por encima */
 a:hover {
-  text-decoration: underline; /* Agrega un subrayado al pasar el mouse por encima del enlace */
+  text-decoration: underline;/* Agrega un subrayado al pasar el mouse por encima del enlace */
 }
 
 /* Estilos para formularios */
@@ -221,17 +221,5 @@ footer {
   /* left: 0; Fija el footer a la izquierda */
   border-radius: 10px; /* Agrega esquinas redondeadas al footer*/
 }
-
-
-
-
-/* Estilos específicos para el footer */
-/* .footer {
-  margin-bottom: 50px; /* Agrega un margen inferior de 50px al footer */
-  /* left: 0; /* Alinea el footer a la izquierda */
-  /* right: 0; /* Alinea el footer a la derecha */
-  /* padding: 10px; /* Agrega relleno alrededor del footer */
-  /* background-color: #350866; /* Establece el color de fondo del footer */
-  /* text-align: center;} /* Centra el texto del footer */ 
 
 

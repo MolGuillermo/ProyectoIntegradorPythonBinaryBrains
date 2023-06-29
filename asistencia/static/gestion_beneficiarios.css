@@ -7,37 +7,11 @@
   animation: AnimationName 24s ease infinite;
 }
 
-/* html, body {
-    background-color: rgb(17, 10, 78);
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-} */
-
-/*h1{
-    text-align: center;
-    text-size: 100%;
-    color: rgb(243, 243, 243);
-}*/
 
 h1 {
   color: white;
     text-align: center;
   }
-  
-  /* A NO SON BOTONES */
-  /* a {
-    display: block;
-    width: fit-content;
-    margin: 10px auto;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-  } */
   
   a:hover {
     background-color: #45a049;
