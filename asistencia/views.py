@@ -95,7 +95,7 @@ def modificar_asistencia(request, pk):
         # Si no es una solicitud POST, se crea un formulario con los datos de la asistencia existente
         form = AsistenciaForm(instance=asistencia)
     # Renderizar la plantilla 'modificar_asistencia.html' y pasar el formulario y la asistencia como contexto
-    return render(request, 'asistencia/modificar_asistencia.html', {'form': form, 'asistencia': asistencia})
+    return render(request, 'asistencia/modificar_asistencia.html', {'form': form, 'asistencias': asistencia})
 
 # Vista para eliminar una asistencia existente
 def eliminar_asistencia(request, pk):
