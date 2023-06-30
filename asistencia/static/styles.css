@@ -19,18 +19,18 @@ html{
   padding: 0; /* Elimina el relleno */
 }
 
-/* Configuración adicional para el cuerpo */
+/* Configuración adicional para el cuerpo  */
 body {
   height: 100vh;  
   /* display: flex; Utiliza flexbox para el diseño */
   align-items: center; /* Centra los elementos horizontalmente */
   justify-content: center; /* Centra los elementos verticalmente */
-  flex-grow: 1; /* Hace que el cuerpo crezca para ocupar el espacio disponible */
+  /*flex-grow: 1; /* Hace que el cuerpo crezca para ocupar el espacio disponible */
   padding: 10px; /* Agrega relleno alrededor del cuerpo */
   /* box-sizing: border-box; Incluye el relleno y el borde en el tamaño total */
   /* background-color: white;Color del fondo: Blanco */
   /* opacity: 0.3; /* Opacidad del fondo */
-  background-color: rgba(255, 255, 255, 0.3); /* Fondo opaco */
+  background-color: rgba(255, 255, 255, 0.062); /* Fondo opaco */
 }
 
 
@@ -40,17 +40,17 @@ body {
   max-width: 600px; /* Establece el ancho máximo del contenedor */
   padding: 20px; /* Agrega relleno alrededor del contenedor */
   margin: 0 auto; /* Centra el contenedor horizontalmente */
-  background-color: #350866; /* Establece el color de fondo del contenedor */
+  background-color: #282726ee; /* Establece el color de fondo del contenedor */
   box-shadow: 0 2px 5px rgba(227, 218, 232, 0.1); /* Agrega una sombra al contenedor */
   border-radius: 10px; /* Agrega esquinas redondeadas al contenedor */
   margin-bottom: 20px; /* Agrega un margen inferior al contenedor */
-  color: #86d6f6; /* Establece el color del texto titulos h1,h2*/
+  color: #7601f3; /* Establece el color del texto titulos h1,h2*/
 }
 
 /* Estilos para títulos */
 h1, h2 {
   text-align: center; /* Centra el texto del título */
-  color: #fefefe; /* Establece el color del texto */
+  color: #7601f3; /* Establece el color del texto */
 }
 
 /* Estilos para listas */
@@ -67,38 +67,38 @@ li {
 /* Estilos para enlaces */
 a {
   text-decoration: none; /* Elimina la decoración de subrayado de los enlaces */
-  color: #fcfcfc; /* Establece el color del texto del enlace */
+  color: #7601f3; /* Establece el color del texto del enlace */
 }
 
 /* Estilos para enlaces al pasar el mouse por encima */
 a:hover {
-  text-decoration: underline;/* Agrega un subrayado al pasar el mouse por encima del enlace */
+  text-decoration:none;/* Agrega un subrayado al pasar el mouse por encima del enlace */
 }
 
 /* Estilos para formularios */
 .formulario {
-  margin-top: 20px; /* Agrega un margen superior al formulario */
+  margin-top: 30px; /* Agrega un margen superior al formulario */
   text-align: center; /* Centra el texto del formulario */
-  background-color: #350866; /* Establece el color de fondo del formulario */
+  background-color: #282726ee; /* Establece el color de fondo del formulario */
   padding: 10px; /* Agrega relleno alrededor del formulario */
   border-radius: 10px; /* Agrega esquinas redondeadas al formulario */
-  color: #e2c9fa; /* Establece el color del texto del titulo h1*/
+  color: #7601f3; /* Establece el color del texto del titulo h1*/
 }
 
 /* Estilos para enlaces dentro del formulario */
 .formulario a {
   display: block; /* Convierte el enlace en un bloque */
-  margin: 10px auto; /* Centra el enlace horizontalmente */
+  margin: 5px 30px; /* Centra el enlace horizontalmente */
   padding: 10px 20px; /* Agrega relleno alrededor del enlace */
-  background-color: #350866; /* Establece el color de fondo del enlace */
+  background-color: #282726ee; /* Establece el color de fondo del enlace */
   color: #ffffff; /* Establece el color del texto del enlace */
   border: none; /* Elimina el borde del enlace */
-  border-radius: 5px; /* Agrega esquinas redondeadas al enlace */
+  border-radius: 20px; /* Agrega esquinas redondeadas al enlace */
   text-decoration: none; /* Elimina la decoración de subrayado del enlace */
 }
 
 .table td {
-  background-color: #350866; /* Establece el color de fondo del enlace */
+  background-color: #282726ee; /* Establece el color de fondo del enlace */
   color: #000000; /* Establece el color del texto del enlace */
   border: none; /* Elimina el borde del enlace */
   border-radius: 5px; /* Agrega esquinas redondeadas al enlace */
@@ -108,9 +108,14 @@ a:hover {
 
 /* Estilos para enlaces dentro del formulario al pasar el mouse por encima */
 .formulario a:hover {
-  background-color: #702dff; /* Color previo = 663508 - Cambia el color de fondo del enlace al pasar el mouse por encima */
+  
+  border-radius: none;
+  color: #ffffff;
+  background-color: rgb(39, 17, 99); /* Color previo = 663508 - Cambia el color de fondo del enlace al pasar el mouse por encima */
   /*width: 50px; /* Hace que el enlace ocupe el % de ancho */
-  display: inline-block; /* Convierte el enlace en un bloque en línea */
+  display:block; /* Convierte el enlace en un bloque en línea */
+  box-shadow: 0 0 2px #a945c7,0 0 40px #a945c7,0 0 80px #a945c7;
+  transition: 1s;
 }
 
 /* Estilos para formularios */
@@ -138,10 +143,10 @@ form select {
 }
 
 /* Estilos para botones de formulario */
-form button {
+form button{
 
   padding: 10px 20px; /* Agrega relleno alrededor del botón */
-  background-color: #350866; /* Establece el color de fondo del botón */
+  background-color: #282726ee; /* Establece el color de fondo del botón */
   color: #fff; /* Establece el color del texto del botón */
   border: none; /* Elimina el borde del botón */
   border-radius: 4px; /* Agrega esquinas redondeadas al botón */
@@ -150,7 +155,7 @@ form button {
 
 /* Estilos para botones de formulario al pasar el mouse por encima */
 form button:hover {
-  background-color: #8329d2; /* Cambia el color de fondo del botón al pasar el mouse por encima */
+  background-color: #7601f3; /* Cambia el color de fondo del botón al pasar el mouse por encima */
 }
 
 /* Estilos para botones y enlaces */
@@ -197,7 +202,7 @@ th{
   color: #000000; /*cambiar los titulos color titulos en la tabla*/
 }
 td{
-  color: #ffffff; /*cambiar los titulos color titulos en la tabla*/
+  color: #7601f3; /*cambiar los titulos color titulos en la tabla*/
   text-align: center;
   vertical-align: middle;
 }
@@ -216,22 +221,10 @@ tr{
 /* Estilos específicos para el footer */
 footer {
     box-sizing: border-box;
-    /* margin: auto; */
-    /* padding: auto; */
     width: auto; /* Hace que el footer ocupe el 100% de ancho */    
     height: auto; /* Establece la altura del footer */
-    
-
-  /* background-color: #350866; Establece el color de fondo del footer */
- /* color: #ffffff; /*  Establece el color del texto del footer*/
-  /* padding: 10px; Agrega relleno alrededor del footer */
-   background-color: rgba(255, 255, 255, 0.5); /* Fondo opaco */
-   text-align: center; /* Centra el texto del footer*/
-
-  /* position: fixed; Establece la posición fija del footer */
-  /* bottom: 0; Fija el footer en la parte inferior */
-  /* left: 0; Fija el footer a la izquierda */
-  border-radius: 10px; /* Agrega esquinas redondeadas al footer*/
+    text-align: center; /* Centra el texto del footer*/
+    border-radius: 10px; /* Agrega esquinas redondeadas al footer*/
 }
 
 

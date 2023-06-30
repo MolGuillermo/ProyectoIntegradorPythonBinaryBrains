@@ -1,5 +1,9 @@
 from django import forms
+from datetime import date
 from .models import Beneficiario, Asistencia
+from django.shortcuts import render, get_object_or_404, redirect
+from django.db.models import Count
+
 
 class BeneficiarioForm(forms.ModelForm):
     fecha_de_nacimiento = forms.DateField(widget=forms.DateInput(attrs={'type': 'date'}))
@@ -15,6 +19,16 @@ class BeneficiarioForm(forms.ModelForm):
     class Meta:
         model = Beneficiario
         fields = ('nombre', 'apellido', 'dni', 'fecha_de_nacimiento', 'edad','rama')
+
+    def clean_fecha_de_nacimiento(self):
+        fecha_nacimiento = self.cleaned_data['fecha_de_nacimiento']
+        hoy = date.today()
+        edad = hoy.year - fecha_nacimiento.year - ((hoy.month, hoy.day) < (fecha_nacimiento.month, fecha_nacimiento.day))
+        
+        if edad < 0:
+            raise forms.ValidationError("La fecha de nacimiento no puede ser en el futuro.")
+        
+        return fecha_nacimiento
     
     def clean_dni(self):
         dni = self.cleaned_data.get('dni')
