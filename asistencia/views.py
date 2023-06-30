@@ -86,7 +86,7 @@ def modificar_asistencia(request, pk):
     asistencia = get_object_or_404(Asistencia, pk=pk)
     if request.method == 'POST':
         # Si se recibió una solicitud POST, se crea un formulario con los datos recibidos y el beneficiario existente
-        form = BeneficiarioForm(request.POST, instance=asistencia)
+        form = AsistenciaForm(request.POST, instance=asistencia)
         if form.is_valid():
             # Si el formulario es válido, se guarda en la base de datos
             form.save()
