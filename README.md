@@ -21,6 +21,28 @@
 	<a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
 </p>
 
+## Proyecto: Asistencia para un grupo Scout 
+[![Flor-de-lis1.png](https://i.postimg.cc/jS7Z4Mgv/Flor-de-lis1.png)](https://postimg.cc/mPTYbyGF)
+</p>
+
+
+### Descripición:
+La pagina inicial mostrara 2 opciones, la primera para la Gestión de Beneficiarios, la segunda para Gestión de Asistencias. Al pie se mostrara Los integrantes del grupo y enlaces para acceder a LinkedIn y GitHub de cada uno.
+  
+-En Gestion de Beneficiarios
+	-Tendras las opciones de crear beneficiario y volver a la pagina principal
+	-Luego se mostrará el listado de beneficiarios con las opciones de Modificar y Eliminar.
+	-Si elige la opción de Crear beneficiario
+	- Se abrira un formulario para registrar: Nombre y Apellido, DNI , Fecha de nacimiento, Edad, Rama. Al pie tendra la opción de guardar y la de ir A la Pagina Principal.
+	-Al guardar, volvera a la pagina inicial(se guardan los cambios en la base de datos).
+
+-En Gestión de Asistencias
+	- Tendrás las opciones de Crear Asistencia y volver a la pagina principal
+	- Se mostrará el listado de asistencias tomadas, especificando el beneficiario, la fecha y el estado de la asistencia, además tendrás las opciones de modificar y de eliminar.
+	-Si elige la opción de Crear asistencia: se abrirá un pequeño formulario que dara un desplegable para seleccionar el beneficiario, Fecha y presente. Al pie tendrá las opciones de Guardar y Volver a la pagina principal.
+	-Si guarda, volverá a la pagina principal(se guardan los cambios en la base de datos).
+
+
 ## `Integrantes` :point_down:
 #### :brain:  Liscio, Natalia. 
 #### :brain:  Molina, Luís Guillermo.
