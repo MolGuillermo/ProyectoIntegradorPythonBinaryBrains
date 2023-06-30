@@ -1,5 +1,3 @@
-# ProyectoIntegradorPythonBinaryBrains
-
 <h1 align= "center" >Proyecto Integrador Python Binary Brains
   
 [![Binari-Brains-Logo1.png](https://i.postimg.cc/9MSmTfNR/Binari-Brains-Logo1.png)](https://postimg.cc/TLVvvTxf)
