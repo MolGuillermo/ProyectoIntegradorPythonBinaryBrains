@@ -23,7 +23,7 @@ def crear_beneficiario(request):
         if form.is_valid():
             # Si el formulario es válido, se guarda en la base de datos
             form.save()
-            return redirect('index')
+            return redirect('gestion_beneficiarios')
     else:
         # Si no es una solicitud POST, se crea un formulario vacío
         form = BeneficiarioForm()
@@ -40,7 +40,7 @@ def modificar_beneficiario(request, pk):
         if form.is_valid():
             # Si el formulario es válido, se guarda en la base de datos
             form.save()
-            return redirect('index')
+            return redirect('gestion_beneficiarios')
     else:
         # Si no es una solicitud POST, se crea un formulario con los datos del beneficiario existente
         form = BeneficiarioForm(instance=beneficiario)
@@ -54,7 +54,7 @@ def eliminar_beneficiario(request, pk):
     if request.method == 'POST':
         # Si se recibió una solicitud POST, se elimina el beneficiario de la base de datos
         beneficiario.delete()
-        return redirect('index')
+        return redirect('gestion_beneficiarios')
     # Renderizar la plantilla 'eliminar_beneficiario.html' y pasar el beneficiario como contexto
     return render(request, 'asistencia/eliminar_beneficiario.html', {'beneficiario': beneficiario})
 
@@ -73,7 +73,7 @@ def crear_asistencia(request):
         if form.is_valid():
             # Si el formulario es válido, se guarda en la base de datos
             form.save()
-            return redirect('index')
+            return redirect('gestion_asistencias')
     else:
         # Si no es una solicitud POST, se crea un formulario vacío
         form = AsistenciaForm()
@@ -90,7 +90,7 @@ def modificar_asistencia(request, pk):
         if form.is_valid():
             # Si el formulario es válido, se guarda en la base de datos
             form.save()
-            return redirect('index')
+            return redirect('gestion_asistencias')
     else:
         # Si no es una solicitud POST, se crea un formulario con los datos de la asistencia existente
         form = AsistenciaForm(instance=asistencia)
@@ -104,6 +104,6 @@ def eliminar_asistencia(request, pk):
     if request.method == 'POST':
         # Si se recibió una solicitud POST, se elimina la asistencia de la base de datos
         asistencia.delete()
-        return redirect('index')
+        return redirect('gestion_asistencias')
     # Renderizar la plantilla 'eliminar_asistencia.html' y pasar la asistencia como contexto
     return render(request, 'asistencia/eliminar_asistencia.html', {'asistencia': asistencia})
