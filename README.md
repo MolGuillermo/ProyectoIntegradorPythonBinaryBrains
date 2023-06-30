@@ -1,14 +1,14 @@
 # ProyectoIntegradorPythonBinaryBrains
 
-<h1 align= "center" >ProyectoIntegradorPythonBinaryBrains
+<h1 align= "center" >Proyecto Integrador Python Binary Brains
   
 [![Binari-Brains-Logo1.png](https://i.postimg.cc/9MSmTfNR/Binari-Brains-Logo1.png)](https://postimg.cc/TLVvvTxf)
 
 <h2>Proyecto Integrador Final del Tercer Cuatrimestre de la Tecnicatura Universitaria en Programacion UTN-FRSR</h2>
 
-<p>Para le realizacion de este proyecto utilizamos un extencion de Visual Studio Code llamada Live Share, la cual nos permitio realizar cambios en tiempo real de todos los integrantes, lo mismo poder realizar coimmits grupales.</p>
+<p>Para la realización de este proyecto utilizamos una extención de Visual Studio Code llamada Live Share, la cual nos permitió realizar cambios en tiempo real de todos los integrantes, lo mismo poder realizar coimmits grupales.</p>
 
-<p>La metodologia de trabajo fue, reuniones grupales programadas, no se utilizo la metodologia Scrum</p>
+<p>La metodología de trabajo fue, reuniones grupales programadas, no se utilizó la metodología Scrum</p>
 
 <h3 align="left">Languages y Herramientas:</h3>
 <p align="left"> 
